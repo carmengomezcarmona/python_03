@@ -1,19 +1,27 @@
 import random
 
+
 def gen_player_achievements() -> set:
     all_achievements = [
+        "Crafting Genius",
+        "World Savior",
+        "Untouchable",
+        "Strategist",
+        "Survivor",
+        "Treasure Hunter",
         "Boss Slayer",
-    "Master Explorer",
-    "Speed Runner",
-    "Collector Supreme"
+        "Unstoppable",
+        "Master Explorer",
+        "Speed Runner",
+        "First Steps",
+        "Collector Supreme",
+        "Sharp Mind"
     ]
-    random.randint()
-    return set
-
-
-
+    number = random.randint(1, 4)
+    return set(random.sample(all_achievements, number))
 
 
 if __name__ == "__main__":
-    print("=== Inventory System Analysis ===")
+    print("=== Achievement Tracker System ===")
+    print("Player Alice: ", gen_player_achievements())
     
