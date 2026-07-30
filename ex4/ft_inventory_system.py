@@ -2,7 +2,7 @@ import sys
 
 if __name__ == "__main__":
     print("=== Inventory System Analysis ===")
-    inventory: dict = {}
+    inventory: dict[str, int] = {}
     for argument in sys.argv[1:]:
         parts = argument.split(":")
         if len(parts) != 2:
